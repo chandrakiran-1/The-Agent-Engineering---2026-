@@ -1,10 +1,10 @@
 def decorator(func):
     def wrapper():
-        print("before the func:")
+        print("before function:")
         func()
-        print("after the function:")
+        print("after function:")
     return wrapper
 @decorator
 def hello():
-     print("hello world")
+    print("hello function:")
 hello()
