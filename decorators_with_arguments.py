@@ -9,3 +9,8 @@ def decorators(func):
 def greet(name):
     print(f"Hello, {name}")
 greet("chandu")
+
+@decorators
+def user(age , rollno):
+    print( "age : ",age ,"rollno : ",rollno)
+user(age=20 , rollno=11)
