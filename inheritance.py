@@ -24,3 +24,13 @@ class Car(Vehicle):
     pass
 car = Car()
 car.Start()
+
+class Parent:
+    def show(self):
+        print("Parent-class")
+class Child(Parent):
+    def showex(self):
+        super().show()
+        print("child - class")
+c = Child()
+c.showex()
