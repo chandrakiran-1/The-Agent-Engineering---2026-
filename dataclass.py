@@ -3,7 +3,5 @@ from dataclasses import dataclass
 class Student:
     name : str
     age : int
-s = Student("Chandu" , 20)
+s = Student("chandu", 20)
 print(s)
-print(s.name)
-print(s.age)
