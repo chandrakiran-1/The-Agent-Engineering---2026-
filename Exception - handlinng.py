@@ -1,6 +1,6 @@
-try:
-    print(10/0)
-except:
-    print("cant divided by the zero:")
-finally:
-    print("the code is ended here:")
+class NegativeError(Exception):
+    pass
+n = -1
+if n < 0:
+    raise NegativeError("The number cant be zero")
+print("the num is : " , n)
