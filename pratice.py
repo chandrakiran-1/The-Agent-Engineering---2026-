@@ -66,3 +66,9 @@ d = {
 with open("data.json","w") as f:
     json.dump(d,f)
 # json.dump is used to  write to json to file.
+
+with open("data.json","r") as file:
+  o =  json.load(file)
+  print(o)
+  print(o["age"])
+  #json.load is used to read Json from the file
