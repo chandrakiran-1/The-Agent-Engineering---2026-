@@ -57,3 +57,12 @@ acc = BankAccount("chandu",40000)
 acc.deposit(30000)
 acc.withdraw(10000)
 acc.show_balance()
+
+import json
+d = {
+    "name":"chandrakiran",
+    "phno":984894948
+}
+with open("data.json","w") as f:
+    json.dump(d,f)
+# json.dump is used to  write to json to file.
