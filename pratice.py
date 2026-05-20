@@ -72,3 +72,13 @@ with open("data.json","r") as file:
   print(o)
   print(o["age"])
   #json.load is used to read Json from the file
+
+  import csv
+  d =[
+      ["name","marks"],
+      ["chandrakiran",80]
+      ["kiran",100]
+  ]
+  with open("data.csv" , "w" , newline="") as f:
+      w = csv.writer(f)
+      w.writerows(d)
