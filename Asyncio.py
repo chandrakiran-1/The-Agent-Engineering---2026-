@@ -1,17 +1,13 @@
 import asyncio
 
-async def wish():
-    print("1")
-    await asyncio.sleep(3)
-    print("2")
-asyncio.run(wish())
-
-async def num():
-    print("one")
-    await asyncio.sleep(2)
-    print("two")
-    await asyncio.sleep(3)
-    print("Three")
+async def task1():
+    print("Task1 Start:")
     await asyncio.sleep(4)
-    print("Four")
-asyncio.run(num())
+    print("Task1 End")
+async def task2():
+    print("Task2 Start")
+    await asyncio.sleep(1)
+    print("Task2 End")
+async def main():
+    await asyncio.gather(task1(),task2())
+asyncio.run(main())
