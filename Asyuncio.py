@@ -1,6 +1,9 @@
 import asyncio
 
 async def wish():
-    return "hello all"
-Wish = wish()
+    print("welcome:")
+ 
+ 
+coro = wish()
+
 asyncio.run(wish())
