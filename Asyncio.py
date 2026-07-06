@@ -1,13 +1,14 @@
 import asyncio
-
 async def task1():
-    print("Task1 Start:")
-    await asyncio.sleep(4)
-    print("Task1 End")
+    print("Task1 Started:")
+    await asyncio.sleep(5)
+    print("Task1 Ended")
 async def task2():
-    print("Task2 Start")
-    await asyncio.sleep(1)
-    print("Task2 End")
+    print("Task2 Started:")
+    await asyncio.sleep(2)
+    print("Task2 Ended")
 async def main():
-    await asyncio.gather(task1(),task2())
+    await task1()
+    await task2()
+
 asyncio.run(main())
