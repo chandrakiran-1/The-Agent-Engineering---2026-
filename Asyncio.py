@@ -8,7 +8,5 @@ async def task2():
     await asyncio.sleep(2)
     print("Task2 Ended")
 async def main():
-    await task1()
-    await task2()
-
+    await asyncio.gather(task1(),task2())
 asyncio.run(main())
